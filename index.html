@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: lightyellow;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .btn {
+            height: 40px;
+            width: 80px;
+            margin: 10px;
+        }
+
+        .content {
+            height: 230px;
+            width: 445px;
+            margin-bottom: 10px;
+        }
+
+        header {
+            height: 60px;
+            width: 100%;
+            background-color: hwb(49 0% 0%);
+        }
+
+        .nav-bar {
+            height: inherit;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-bar button {
+            background-color: hwb(49 0% 0%);
+            border: none;
+            margin-right: 20px;
+        }
+
+        main>h1 {
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            color: rgb(187, 63, 63);
+            text-align: center;
+        }
+
+        main p {
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1.5rem;
+            color: rgb(187, 63, 63);
+            text-align: center;
+        }
+
+        main h2 {
+            font-family: "Playwrite GB S", cursive;
+            font-optical-sizing: auto;
+            font-weight: bold;
+            font-style: normal;
+            color: rgb(187, 63, 63);
+            margin: 5px 0 10px 0;
+        }
+
+        #content1 input {
+            height: 55px;
+            width: inherit;
+            font-size: 1rem;
+            background-color: rgba(249, 229, 82, 0.468);
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        #content1 input::placeholder {
+            color: rgba(187, 63, 63, 0.603);
+        }
+
+        #content1 input::-webkit-inner-spin-button,
+        input::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+        }
+
+        #content2 textarea,
+        select {
+            width: inherit;
+            font-size: 1.2rem;
+            background-color: rgba(249, 229, 82, 0.468);
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding-left: 10px;
+            color: rgb(187, 63, 63);
+        }
+
+        #content2 select {
+            height: 55px;
+            width: inherit;
+            font-size: 1rem;
+            background-color: rgba(249, 229, 82, 0.468);
+            border: none;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            padding-left: 10px;
+        }
+
+        #content3 p {
+            text-align: start;
+        }
+
+
+        #content3 {
+            height: inherit;
+            width: inherit;
+            border: none;
+            border-radius: 10px;
+        }
+
+        #content3 label {
+            display: inline-flex;
+            margin: 5px;
+            font-size: 1.1rem;
+            color: rgb(118, 5, 5);
+        }
+
+        #content3 input {
+            color: white;
+            margin-right: 10px;
+        }
+
+        input[type="checkbox"] {
+            height: 20px;
+            width: 15px;
+            color: brown;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #next {
+            background-color: white;
+            border-radius: 10px;
+            font-size: 1rem;
+        }
+
+        #back {
+            background-color: hwb(49 0% 0%);
+            border-radius: 10px;
+            font-size: 1rem;
+            color: rgb(118, 5, 5);
+        }
+
+        #monday input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+       @media (max-width: 360px){
+        body {
+            width: 400px ;
+        }
+
+        .nav-bar {
+            justify-content: space-between;
+        }
+        .nav-bar img {
+           padding-left: 20px;
+       }
+        main img {
+            height: 200px;
+            margin: 20px auto;
+        }
+        #content1, #content2, #content3 {
+            width: 360px;
+        }
+
+        .button-container {
+            margin-top: 20px;
+        }
+       }
+
+       @media (max-width: 450px) and (min-width: 361px){
+        body {
+          min-width: 450px;
+        }
+        .nav-bar img {
+           padding-left: 20px;
+       }
+
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-bar">
+           
+            <img src="./assests/reshot-icon-chat-XA4REQ93W8.svg" height="55" alt="Chat Logo">
+            <button><img src="./assests/reshot-icon-search-Y9FGCMS8DP.svg" height="50" alt=""></button>
+        </div>
+    </header>
+    <main>
+
+        <h1>Sign Up</h1>
+        <h1>To Become A Member</h1>
+        <p>Knowlege is Power</p>
+        <img src="./assests/generative-ai-business-people-climbing-mountain-peak-walking-rope-falling-parachute-characters-new-heights-team-work-279988275.webp"
+            height="250" alt="Mountain Image">
+        <div id="content1" class="content">
+            <h2>Personal Information</h2>
+            <input type="text" placeholder="Full Name"><br>
+            <input type="email" name="email" id="email" placeholder="Email Address"><br>
+            <input type="number" name="number" id="number" placeholder="Contact Number">
+        </div>
+        <div id="content2" class="content">
+            <h2>More Info</h2>
+            <textarea rows="5"></textarea>
+            <select name="More-info">
+                <option value="">How Did You Reach To Us?</option>
+                <option value="link">Link</option>
+                <option value="got-heard">Got Heard</option>
+            </select>
+        </div>
+        <div id="content3" class="content">
+            <h2>Choose a Day For MeetUp</h2>
+            <label for="monday">
+                <input class="checkbox" type="checkbox" name="monday" id="monday">Monday
+            </label><br>
+            <label for="tuesday">
+                <input class="checkbox" type="checkbox" name="tuesday" id="tuesday">Tuesday
+            </label><br>
+            <label for="wednesday">
+                <input class="checkbox" type="checkbox" name="wednesday" id="wednesday">Wednesday
+            </label><br>
+            <label for="thursday">
+                <input class="checkbox" type="checkbox" name="thursday" id="thursday">Thursday
+            </label><br>
+            <label for="friday">
+                <input class="checkbox" type="checkbox" name="friday" id="friday">Friday
+            </label><br>
+            <label for="saturday">
+                <input class="checkbox" type="checkbox" name="saturday" id="saturday">Saturday
+            </label><br>
+            <label for="sunday">
+                <input class="checkbox" type="checkbox" name="sunday" id="sunday">Sunday
+            </label>
+        </div>
+        <div class="button-container">
+            <button class="btn" id="back">Back</button>
+            <button class="btn" id="next">Next</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
